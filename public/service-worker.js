@@ -11,18 +11,15 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-​
 var dataCacheName = 'digiFinanceData-v1';
 var cacheName = 'digiFinancePWA-final-1';
 var filesToCache = [
   '/'
 ];
-​
 // check the following links to improve this
 // https://github.com/wycats/rack-offline
 // http://stackoverflow.com/questions/25496027/how-to-create-a-rails-4-offline-webapp
 // https://developers.google.com/web/fundamentals/getting-started/codelabs/your-first-pwapp/
-​
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
@@ -32,7 +29,6 @@ self.addEventListener('install', function(e) {
     })
   );
 });
-​
 self.addEventListener('activate', function(e) {
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
