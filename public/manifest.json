@@ -2,7 +2,7 @@
   "short_name": "FlaviaCodes",
   "name": "Flavia Muntean | Full Stack Developer",
   "background_color": "#F8F8F8",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#FE9010",
   "icons": [
     {
