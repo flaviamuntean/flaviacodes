@@ -1,0 +1,29 @@
+.skills-categ {
+  width: 120px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #767676;
+  font-weight: 500;
+  padding: 13px;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid #d1d1d1 1px;
+  overflow: hidden;
+  margin-right: 18px;
+}
+
+.skills-categ:hover {
+  text-decoration: none !important;
+  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.skill {
+  min-width: 140px;
+  margin-bottom: 20px;
+}
