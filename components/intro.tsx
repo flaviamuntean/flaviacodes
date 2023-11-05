@@ -4,9 +4,9 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowRight } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Intro = () => {
   return (
@@ -47,15 +47,18 @@ const Intro = () => {
         </div>
       </div>
       <motion.p
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl 2xl:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Flavia.</span> I'm a{' '}
-        <span className="font-bold">full-stack developer</span> with a passion
-        for building beautiful, functional, and accessible{' '}
+        <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-300 to-red-800">
+          Hi, I'm Flavia.
+        </span>{' '}
+        I'm a <span className="font-bold">full-stack developer</span> with a
+        passion for building beautiful, functional, and accessible{' '}
         <span className="italic">sites & applications</span>. My focus is{' '}
-        <span className="underline">React and React Native</span>.
+        <span className="underline">Tech for Good</span> using React and React
+        Native.
       </motion.p>
       <motion.div
         className="flex flex-col sm:flex-row gap-4 items-center justify-center px-4 text-lg font-medium"
@@ -86,13 +89,13 @@ const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem]
         outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all
         cursor-pointer border border-black/10"
           href="https://www.linkedin.com/in/flaviamuntean/"
           target="_blank"
         >
-          <BsLinkedin />
+          <FaLinkedinIn />
         </a>
 
         <a
@@ -102,7 +105,7 @@ const Intro = () => {
           href="https://github.com/flaviamuntean"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithub />
         </a>
       </motion.div>
     </section>
