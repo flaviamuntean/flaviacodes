@@ -46,7 +46,7 @@ const Intro = () => {
           </motion.div>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl 2xl:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ const Intro = () => {
         <span className="italic">sites & applications</span>. My focus is{' '}
         <span className="underline">Tech for Good</span> using React and React
         Native.
-      </motion.p>
+      </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row gap-4 items-center justify-center px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
